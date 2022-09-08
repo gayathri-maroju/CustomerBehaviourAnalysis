@@ -1,0 +1,10 @@
+numpy
+pandas
+seaborn
+datetime
+matplotlib
+sklearn
+scipy
+stats
+streamlit
+joblib
