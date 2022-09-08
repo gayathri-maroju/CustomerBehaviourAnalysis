@@ -33,8 +33,7 @@ def main():
     st.image("""https://www.araya.org/wp-content/uploads/2021/04/in-store-marketing.jpg""")
     Income = st.text_input("Type In The Household Income")
     Children = st.radio( "Select Number Of children In Household",('0', '1','2','3') )
-    #Month_Customer = st.text_input( "Type In The Month of customer's enrollment with the company")
-    Month_Customer = st.number_input("Month of customer's Enrollment",1,12)
+    Month_Customer = st.text_input( "Type In The Month of customer's enrollment with the company")
     Age = st.slider( "Select Age",18,85)
     TotalSpendings= st.text_input( "Type In The TotalSpendings")
     
