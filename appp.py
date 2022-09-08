@@ -30,7 +30,7 @@ def segment_customers(input_data):
 def main():
     
     
-    st.image("""https://cdn.w600.comps.canstockphoto.com/text-sign-showing-customer-behavior-stock-image_csp64459562.jpg""")
+    st.image("""https://www.araya.org/wp-content/uploads/2021/04/in-store-marketing.jpg""")
     Income = st.text_input("Type In The Household Income")
     Children = st.radio( "Select Number Of children In Household",('0', '1','2','3') )
     Month_Customer = st.text_input( "Type In The Month of customer's enrollment with the company")
@@ -42,7 +42,7 @@ def main():
     
     result = ""
 
-    # when 'Predict' is clicked, make the prediction and store it
+    
     if st.button("Customer Analysis"):
         result=segment_customers([[Income,Age,Month_Customer,TotalSpendings,Children]])
     
