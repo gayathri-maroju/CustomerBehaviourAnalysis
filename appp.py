@@ -9,7 +9,7 @@ KMeansCls = joblib.load('cluster.pkl')
 
 #page configuration
 st.set_page_config(page_title = 'Customer Behaviour Analysis Web App', layout='centered')
-st.title('Customer Behaviour Analysis')
+st.title('CUSTOMER BEHAVIOR ANALYSIS',layout = 'center')
 
 # customer segmentation function
 def segment_customers(input_data):
@@ -33,7 +33,8 @@ def main():
     st.image("""https://www.araya.org/wp-content/uploads/2021/04/in-store-marketing.jpg""")
     Income = st.text_input("Type In The Household Income")
     Children = st.radio( "Select Number Of children In Household",('0', '1','2','3') )
-    Month_Customer = st.text_input( "Type In The Month of customer's enrollment with the company")
+    #Month_Customer = st.text_input( "Type In The Month of customer's enrollment with the company")
+    Month_Customer = st.number_input("Month of customer's Enrollment",1,12)
     Age = st.slider( "Select Age",18,85)
     TotalSpendings= st.text_input( "Type In The TotalSpendings")
     
@@ -43,7 +44,7 @@ def main():
     result = ""
 
     
-    if st.button("Customer Analysis"):
+    if st.button("Click Here"):
         result=segment_customers([[Income,Age,Month_Customer,TotalSpendings,Children]])
     
     st.success(result)
