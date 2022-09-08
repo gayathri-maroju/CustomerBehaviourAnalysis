@@ -9,7 +9,7 @@ KMeansCls = joblib.load('cluster.pkl')
 
 #page configuration
 st.set_page_config(page_title = 'Customer Behaviour Analysis Web App', layout='centered')
-st.title('CUSTOMER BEHAVIOR ANALYSIS',layout = 'center')
+st.title('CUSTOMER BEHAVIOR ANALYSIS',layout = 'centered')
 
 # customer segmentation function
 def segment_customers(input_data):
